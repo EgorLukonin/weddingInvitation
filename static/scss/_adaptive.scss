@@ -89,6 +89,10 @@
         margin-bottom: 200px;
         .faq-content{
             max-width: none;
+            .icon-faq{
+                width: 110px;
+                height: 110px;
+            }
             .title__faq{
                 font-size: 45px;
                 margin-bottom: 100px;
@@ -110,10 +114,7 @@
                 }
             }
         }
-        .faq-content::after{
-            width: 110px;
-            height: 110px;
-        }
+
     }
     .plan-day{
         margin-bottom: 150px;
@@ -142,7 +143,7 @@
             }
         }
     }
-    .plan-day::before{
+    .icon-plan-day{
         width: 200px;
         height: 200px;
         top: -13%;
@@ -334,6 +335,12 @@
         margin-bottom: 200px;
         .faq-content{
             max-width: none;
+            .icon-faq{
+                width: 80px;
+                height: 80px;
+                right: 5%;
+                top: -10%;
+            }
             .title__faq{
                 font-size: 35px;
                 margin-bottom: 70px;
@@ -362,12 +369,6 @@
                     }
                 }
             }
-        }
-        .faq-content::after{
-            width: 80px;
-            height: 80px;
-            right: 5%;
-            top: -10%;
         }
     }
     .plan-day{
@@ -407,7 +408,7 @@
             }
         }
     }
-    .plan-day::before{
+    .icon-plan-day{
         width: 130px;
         height: 130px;
         top: -16%;

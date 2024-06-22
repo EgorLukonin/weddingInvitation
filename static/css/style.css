@@ -778,6 +778,10 @@ footer .content-footer p::after {
   .faq .faq-content {
     max-width: none;
   }
+  .faq .faq-content .icon-faq {
+    width: 110px;
+    height: 110px;
+  }
   .faq .faq-content .title__faq {
     font-size: 45px;
     margin-bottom: 100px;
@@ -795,10 +799,6 @@ footer .content-footer p::after {
   }
   .faq .faq-content .dress-block .description p {
     font-size: 28px;
-  }
-  .faq .faq-content::after {
-    width: 110px;
-    height: 110px;
   }
   .plan-day {
     margin-bottom: 150px;
@@ -823,7 +823,7 @@ footer .content-footer p::after {
   .plan-day .plan-day-content .block-plan .block .data .title__block {
     font-size: 38px;
   }
-  .plan-day::before {
+  .icon-plan-day {
     width: 200px;
     height: 200px;
     top: -13%;
@@ -1009,6 +1009,12 @@ footer .content-footer p::after {
   .faq .faq-content {
     max-width: none;
   }
+  .faq .faq-content .icon-faq {
+    width: 80px;
+    height: 80px;
+    right: 5%;
+    top: -10%;
+  }
   .faq .faq-content .title__faq {
     font-size: 35px;
     margin-bottom: 70px;
@@ -1035,12 +1041,6 @@ footer .content-footer p::after {
   }
   .faq .faq-content .dress-block .description p {
     font-size: 24px;
-  }
-  .faq .faq-content::after {
-    width: 80px;
-    height: 80px;
-    right: 5%;
-    top: -10%;
   }
   .plan-day {
     margin-bottom: 150px;
@@ -1077,7 +1077,7 @@ footer .content-footer p::after {
   .plan-day .plan-day-content .block-plan .block .data .geolocation::before {
     width: 100%;
   }
-  .plan-day::before {
+  .icon-plan-day {
     width: 130px;
     height: 130px;
     top: -16%;
