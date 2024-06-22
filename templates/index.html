@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <title>Vitaliy & Anna</title>
+</head>
+<body>
+    <main>
+        <div class="banner">
+            <div class="banner-content">
+                <h1 class="title__banner">Виталий & Анна</h1>
+                <p class="date_banner">16.08.2024</p>
+                <div class="timer__banner">
+                    <div class="timer-content">
+                        <div class="block__timer" id="days">
+                            <h3 class="data">60</h3>
+                            <p class="description">дней</p>
+                        </div>
+                        <div class="block__timer" id="hours">
+                            <h3 class="data">60</h3>
+                            <p class="description">часов</p>
+                        </div>
+                        <div class="block__timer" id="minutes">
+                            <h3 class="data">60</h3>
+                            <p class="description">минут</p>
+                        </div>
+                        <div class="block__timer" id="seconds">
+                            <h3 class="data">60</h3>
+                            <p class="description">секунд</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="greeting">
+            <div class="container">
+                <div class="greerting-content">
+                    <h2 class="title__greeting">Виталий & Анна</h2>
+                    <p class="description__greeting">Мы с радостью делимся с вами нашим счастьем и приглашаем вас разделить этот особенный день с нами.</p>
+                    <p class="description__greeting heart">Ждем вас на нашей свадьбе <img src="{{ url_for('static', filename='img/heart.png') }}" alt="" class="icon-heart"></p>
+                    <div class="imgs__greeting">
+                        <div class="img-block" id="medium">
+                            <div class="content"></div>
+                        </div>
+                        <div class="img-block" id="small">
+                            <div class="content"></div>
+                        </div>
+                        <div class="img-block" id="big">
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="container">
+                <div class="faq-content">
+                    <h2 class="title__faq">F.A.Q.</h2>
+                    <div class="dress-block">
+                        <h1 class="title__block" id="dress-code">Будет ли дресс-код?</h1>
+                        <div class="description">
+                            <p>Мы с радостью приветствуем гостей в одежде различных цветов. Просим воздержаться от полностью белого или черного.</p>
+                        </div>
+                    </div>
+                    <div class="dress-block">
+                        <h1 class="title__block" id="gift">Какие подарки предпочтительны?</h1>
+                        <div class="description">
+                            <p>Мы рады любым подаркам, но для нас предпочтительнее денежные , которые помогут воплотить в жизнь наши мечты.....</p>
+                        </div>
+                    </div>
+                    <div class="icon-faq"></div>
+                </div>
+            </div>
+        </div>
+        <div class="plan-day">
+            <div class="container">
+                <div class="plan-day-content">
+                    <h2 class="title__plan-day">Программа дня</h2>
+                    <div class="block-plan">
+                        <div class="block">
+                            <p class="time">11:00</p>
+                            <div class="point"></div>
+                            <div class="data">
+                                <h2 class="title__block">Регистрация в ЗАГСе</h2>
+                                <a href="https://yandex.ru/maps/-/CDrlvGI8" class="geolocation" target="_blank">Россия, Москва, ул. Дольская д 1 стр 5</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p class="time">13:30</p>
+                            <div class="point"></div>
+                            <div class="data">
+                                <h2 class="title__block">Фуршет</h2>
+                                <a href="https://yandex.ru/maps/-/CDrlnVpa" class="geolocation" target="_blank">Россия, Москва, ул. Дольская д 10 стр 5</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p class="time">14:00</p>
+                            <div class="point" id="end"></div>
+                            <div class="data">
+                                <h2 class="title__block">Банкет</h2>
+                                <a href="https://yandex.ru/maps/-/CDrlnVpa" class="geolocation" target="_blank">Россия, Москва, ул. Дольская д 1 стр 5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-plan-day"></div>
+        </div>
+        <div class="place-registration">
+            <div class="container">
+                <div class="content__place-registration">
+                    <h2 class="title__place-registration">Регистрация</h2>
+                    <hr class="line">
+                    <p class="address">Россия, Москва, ул. Дольская д 1 стр 5</p>
+                </div>
+            </div>
+        </div>
+        <div class="map" id="map-1"></div>
+        <div class="place-banquet">
+            <div class="container">
+                <div class="content__place-banquet">
+                    <h2 class="title__place-banquet">Фуршет — Банкет</h2>
+                    <hr class="line">
+                    <p class="address">Россия, Москва, ул. Дольская д 10 стр 5</p>
+                </div>
+            </div>
+        </div>
+        <div class="map" id="map-2"></div>
+        <div class="form-guest">
+            <div class="container">
+                <div class="content__form-quest">
+                    <h2 class="title">Анкета гостя</h2>
+                    <form method="POST" action="/sending">
+                        <input type="text" placeholder="Имя и Фамилия" name="NameSurname">
+                        <input type="text" placeholder="Информация об аллергии (при наличии)" id="textbox" name="Allergy">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <p>Виталий & Анна</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2f119e74-c08b-4cc3-922e-52e14069b849&lang=ru_RU"></script>
+    <script src="{{ url_for('static', filename='js/anim.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/map-1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/map-2.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/time-counter.js') }}"></script>
+</body>
+</html>
