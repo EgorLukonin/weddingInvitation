@@ -25,4 +25,4 @@ def sending():
     return redirect('/')
 
 
-app.run(debug=True, port=80)
+app.run(debug=False)
