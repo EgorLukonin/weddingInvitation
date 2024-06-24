@@ -4,7 +4,7 @@ function init(){
         zoom: 17
     })
 
-    let placemark = new ymaps.Placemark([55.618320617579684,37.68364807507704], {}, {});
+    let placemark = new ymaps.Placemark([55.61834356912975,37.683347], {}, {});
     map.geoObjects.add(placemark);
 }
 
