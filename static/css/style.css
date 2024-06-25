@@ -8,6 +8,7 @@
 
 html, body {
   width: 100%;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -22,6 +23,11 @@ ol {
 
 input {
   outline: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -758,7 +764,7 @@ footer .content-footer p::after {
     height: 58px;
   }
   .greerting-content .imgs__greeting {
-    height: 50vh;
+    height: 50vh !important;
   }
   .greerting-content .imgs__greeting .img-block#small {
     width: 200px;
@@ -934,6 +940,7 @@ footer .content-footer p::after {
   }
   .banner {
     background-size: cover;
+    width: 100%;
   }
   .title__banner {
     font-size: 46px;
@@ -983,7 +990,7 @@ footer .content-footer p::after {
     height: 50px;
   }
   .greerting-content .imgs__greeting {
-    height: 75vh;
+    height: 70vh !important;
   }
   .greerting-content .imgs__greeting .img-block#small {
     width: 140px;
@@ -1002,7 +1009,7 @@ footer .content-footer p::after {
   .greerting-content .imgs__greeting .img-block#medium {
     width: 220px;
     height: 220px;
-    left: -3%;
+    left: -1%;
     top: 65%;
   }
   .greerting-content .imgs__greeting .img-block#medium .content {
@@ -1187,5 +1194,177 @@ footer .content-footer p::after {
     right: -25%;
     width: 40px;
     height: 40px;
+  }
+}
+@media (min-width: 300px) and (max-width: 380px) {
+  .title__greeting {
+    font-size: 25px !important;
+    margin-bottom: 30px !important;
+  }
+  .description__greeting {
+    font-size: 20px !important;
+    margin-bottom: 30px;
+  }
+  .icon-heart {
+    top: -45px;
+    right: 5%;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .imgs__greeting {
+    height: 90vh !important;
+  }
+  .imgs__greeting .img-block#small {
+    width: 110px !important;
+    height: 110px !important;
+    bottom: 16%;
+    left: 63% !important;
+  }
+  .imgs__greeting .img-block#small .content {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .imgs__greeting .img-block#small .content::before {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .imgs__greeting .img-block#medium {
+    width: 180px !important;
+    height: 180px !important;
+    left: -1%;
+    top: 65%;
+  }
+  .imgs__greeting .img-block#medium .content {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .imgs__greeting .img-block#medium .content::before {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .imgs__greeting .img-block#big {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .imgs__greeting .img-block#big .content {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .imgs__greeting .img-block#big .content::before {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .content__place-banquet .title__place-banquet {
+    font-size: 25px;
+    padding-right: 20px;
+  }
+  .content__place-banquet .title__place-banquet::after {
+    right: 10px;
+    top: -1%;
+  }
+  .content__place-registration .title__place-registration {
+    font-size: 25px;
+  }
+  .title__faq {
+    font-size: 25px !important;
+    margin-bottom: 60px !important;
+  }
+  .dress-block {
+    margin-bottom: 50px !important;
+  }
+  .dress-block .title__block {
+    font-size: 17px !important;
+    margin-bottom: 10px;
+  }
+  .dress-block .title__block::after {
+    width: 30px;
+    height: 30px;
+    top: -5% !important;
+    right: -15% !important;
+  }
+  .dress-block .title__block#dress-code::after {
+    right: -25% !important;
+  }
+  .dress-block .description {
+    padding: 10px !important;
+  }
+  .dress-block .description p {
+    font-size: 15px !important;
+  }
+  .plan-day-content {
+    max-width: none;
+  }
+  .plan-day-content .title__plan-day {
+    font-size: 25px !important;
+  }
+  .plan-day-content .block-plan .block {
+    margin-bottom: 255px;
+  }
+  .plan-day-content .block-plan .block .time {
+    font-size: 20px !important;
+    margin-left: 0;
+    max-width: 15%;
+  }
+  .plan-day-content .block-plan .block .point {
+    max-width: 10%;
+    width: 35px;
+    height: 35px;
+  }
+  .plan-day-content .block-plan .block .data {
+    max-width: 70%;
+    margin: 0px auto;
+  }
+  .plan-day-content .block-plan .block .data .title__block {
+    font-size: 20px !important;
+  }
+  .plan-day-content .block-plan .block .data .geolocation {
+    font-size: 12px !important;
+  }
+  .plan-day-content .block-plan .block .data .geolocation::before {
+    width: 100%;
+  }
+  .address {
+    font-size: 16px !important;
+  }
+  .form-guest {
+    margin-bottom: 150px;
+  }
+  .form-guest .content__form-quest {
+    max-width: none;
+  }
+  .form-guest .content__form-quest .title {
+    font-size: 25px !important;
+    padding-right: 40px;
+  }
+  .form-guest .content__form-quest .title::after {
+    top: -20%;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+  }
+  .form-guest .content__form-quest input {
+    font-size: 15px;
+  }
+  .form-guest .content__form-quest button {
+    font-size: 15px;
+  }
+  footer {
+    height: 120px;
+  }
+  footer .content-footer {
+    height: 120px;
+  }
+  footer .content-footer p {
+    font-size: 25px !important;
+    margin-right: 30px;
+  }
+  footer .content-footer p::after {
+    top: -5%;
+    right: -30%;
+    width: 40px;
+    height: 40px;
+  }
+  .greeting, .faq, .plan-day, .form-guest {
+    margin-bottom: 90px !important;
   }
 }

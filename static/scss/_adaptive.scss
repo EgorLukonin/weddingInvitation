@@ -42,7 +42,7 @@
             height: 58px;
         }
         .imgs__greeting{
-            height: 50vh;
+            height: 50vh !important;
             .img-block#small{
                 width: 200px;
                 height: 200px;
@@ -236,6 +236,7 @@
     }
     .banner{
         background-size: cover;
+        width: 100%;
     }
     .title__banner{
         font-size: 46px;
@@ -284,7 +285,7 @@
             height: 50px;
         }
         .imgs__greeting{
-            height: 75vh;
+            height: 70vh !important;
             .img-block#small{
                 width: 140px;
                 height: 140px;
@@ -302,7 +303,7 @@
             .img-block#medium{
                 width: 220px;
                 height: 220px;
-                left: -3%;
+                left: -1%;
                 top: 65%;
                 .content{
                     width: 220px;
@@ -498,3 +499,184 @@
         }
     }
 }
+
+@media (min-width: 300px) and (max-width: 380px) {
+    .title__greeting{
+        font-size: 25px !important;
+        margin-bottom: 30px !important;
+    }
+    .description__greeting{
+        font-size: 20px !important;
+        margin-bottom: 30px;
+    }
+    .icon-heart{
+        top: -45px;
+        right: 5%;
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .imgs__greeting{
+        height: 90vh !important;
+        .img-block#small{
+            width: 110px !important;
+            height: 110px !important;
+            bottom: 16%;
+            left: 63% !important;
+            .content{
+                width: 110px !important;
+                height: 110px !important;
+            }
+            .content::before{
+                width: 110px !important;
+                height: 110px !important;
+            }
+        }
+        .img-block#medium{
+            width: 180px !important;
+            height: 180px !important;
+            left: -1%;
+            top: 65%;
+            .content{
+                width: 180px !important;
+                height: 180px !important;
+            }
+            .content::before{
+                width: 180px !important;
+                height: 180px !important;
+            }
+        }
+        .img-block#big{
+            width: 300px !important;
+            height: 300px !important;
+            .content{
+                width: 300px !important;
+                height: 300px !important;
+            }
+            .content::before{
+                width: 300px !important;
+                height: 300px !important;
+            }
+        }
+    }
+    .content__place-banquet{
+        .title__place-banquet{
+            font-size: 25px;
+            padding-right: 20px;
+        }
+        .title__place-banquet::after{
+            right: 10px;
+            top: -1%;
+        }
+    }
+    .content__place-registration{
+        .title__place-registration{
+            font-size: 25px;
+        }
+    }   
+    .title__faq{
+        font-size: 25px !important;
+        margin-bottom: 60px !important;
+    } 
+    .dress-block{
+        margin-bottom: 50px !important;
+        .title__block{
+            font-size: 17px !important;
+            margin-bottom: 10px;
+        }
+        .title__block::after{
+            width: 30px;
+            height: 30px;
+            top: -5% !important;
+            right: -15% !important;
+        }
+        .title__block#dress-code::after{
+            right: -25% !important;
+        }
+        .description{
+            padding: 10px !important;
+            p{
+                font-size: 15px !important;
+            }
+        }
+    }
+    .plan-day-content{
+        max-width: none;
+        .title__plan-day{
+            font-size: 25px !important;
+        }
+        .block-plan{
+            .block{
+                margin-bottom: 255px;
+                .time{
+                    font-size: 20px !important;
+                    margin-left: 0;
+                    max-width: 15%;
+                }
+                .point{
+                    max-width: 10%;
+                    width: 35px;
+                    height: 35px;
+                }
+                .data{
+                    max-width: 70%;
+                    margin: 0px auto;
+                    .title__block{
+                        font-size: 20px !important;
+                    }
+                    .geolocation{
+                        font-size: 12px !important;
+                    }
+                    .geolocation::before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .address{
+        font-size: 16px !important;
+    }
+    .form-guest{
+        margin-bottom: 150px;
+        .content__form-quest{
+            max-width: none;
+            .title{
+                font-size: 25px !important;
+                padding-right: 40px;
+            }
+            .title::after{
+                top: -20%;
+                right: 40px;
+                width: 45px;
+                height: 45px;
+            }
+            input{
+                font-size: 15px;
+            }
+            button{
+                font-size: 15px;
+            }
+        }
+    }
+    footer{
+        height: 120px;
+        .content-footer{
+            height: 120px;
+            p{
+                font-size: 25px !important;
+                margin-right: 30px;
+            }
+            p::after{
+                top: -5%;
+                right: -30%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .greeting, .faq, .plan-day, .form-guest{
+        margin-bottom: 90px !important;
+    }
+}
+
+// *{ border:1px solid red; box-sizing:border-box; }

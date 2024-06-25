@@ -6,6 +6,7 @@
 
 html, body{
     width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -20,4 +21,8 @@ ol{
 
 input {
     outline:none;
+}
+
+img{ 
+    width:auto; max-width:100%; 
 }
