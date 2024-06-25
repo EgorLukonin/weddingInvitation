@@ -995,7 +995,7 @@ footer .content-footer p::after {
   .greerting-content .imgs__greeting .img-block#small {
     width: 140px;
     height: 140px;
-    bottom: 14%;
+    bottom: 12% !important;
     left: 60%;
   }
   .greerting-content .imgs__greeting .img-block#small .content {
