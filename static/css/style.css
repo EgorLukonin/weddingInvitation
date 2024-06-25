@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -615,7 +616,33 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.content__form-quest form .necessarily-input {
+  width: 100%;
+  position: relative;
+}
+.content__form-quest form .necessarily-input input#necessarily {
+  width: 100%;
+}
+.content__form-quest form .necessarily-input input#necessarily.active {
+  border: 1px solid #F40303;
+}
+.content__form-quest form .necessarily-input::before {
+  content: "Поле обязательно для заполнения";
+  position: absolute;
+  bottom: 14px;
+  left: 5px;
+  color: #F40303;
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  display: none;
+}
+.content__form-quest form .necessarily-input.active::before {
+  display: block;
+}
 .content__form-quest form input {
+  position: relative;
   border-radius: 15px;
   background-color: #FFFFFF;
   border: 1px solid #000000;
