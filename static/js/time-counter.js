@@ -20,10 +20,17 @@ document.addEventListener('DOMContentLoaded', () =>{
         let nowDate = new Date();
         let leftUntil = weddingDay - nowDate;
 
-        let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
-        let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
-        let minutes = Math.floor(leftUntil / 1000 / 60) % 60;
-        let seconds = Math.floor(leftUntil / 1000) % 60;
+        let days = 0
+        let hours = 0
+        let minutes = 0
+        let seconds = 0
+
+        if (leftUntil > 0 && leftUntil != 0){
+            days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
+            hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
+            minutes = Math.floor(leftUntil / 1000 / 60) % 60;
+            seconds = Math.floor(leftUntil / 1000) % 60;
+        }
 
         daysVal.textContent = days;
         hoursVal.textContent = hours;
